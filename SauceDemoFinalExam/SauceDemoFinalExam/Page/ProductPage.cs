@@ -18,6 +18,7 @@ namespace SauceDemoFinalExam.Page
         public IWebElement AddBackPack => driver.FindElement(By.Id("add-to-cart-sauce-labs-backpack"));
         public IWebElement AddJacket => driver.FindElement(By.Id("add-to-cart-sauce-labs-fleece-jacket"));
 
+        public string HomeUrl = "https://www.saucedemo.com/inventory.html";
 
         public void SelectOption(string text)
 

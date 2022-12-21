@@ -1,10 +1,5 @@
 ﻿using OpenQA.Selenium;
 using SauceDemoFinalExam.Driver;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SauceDemoFinalExam.Page
 {
@@ -15,6 +10,7 @@ namespace SauceDemoFinalExam.Page
         public IWebElement Password => driver.FindElement(By.Id("password"));
         public IWebElement ButtonLogin => driver.FindElement(By.Id("login-button"));
         public IWebElement UserNotLogin => driver.FindElement(By.XPath("//*[@id=\"login_button_container\"]/div/form/div[3]/h3"));
+        public IWebElement NoDataLogin => driver.FindElement(By.CssSelector("#login_button_container h3"));
 
 
         public void Login(string name, string pass)
